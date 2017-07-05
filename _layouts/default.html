@@ -3,20 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<title>Timir Zatri</title>
+	<link href="{{}site.baseurl}/css/common.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
 <strong>Dr. Shammi Rajiullah</strong>
-	<nav>
-		<ul>
-			<li> <a href="{{site.baseurl}}/index.html">Home </a></li>
-			<li> <a href="{{site.baseurl}}/news.html">News </a></li>
-		</ul>
-	</nav>
+ {% include nav.html %}
 </header>
 
 {{content}}
+
+<footer>
+
+ {% include nav.html %}
+	<p> @ 2017 Mohammad Rajiullah.</p>
+</footer>
+
+
 </body>
 </html>
